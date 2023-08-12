@@ -1,4 +1,4 @@
-# Docsify Setuppppp
+# Docsify Setup
 
 ## **Step 1**
 First of all we have to  run the command **podman ps -a**  in The terminal, here we are asking Podman to display information about all containers, including those that are not currently running, in the current environment.
