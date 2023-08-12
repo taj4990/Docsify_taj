@@ -1,4 +1,4 @@
-<h1 align="center"> Docsify Setup</h1>
+ <h1 align="center"> Docsify Setup</h1>
 
  >### <span style="color: teal;">Table of content
  1. What is Docsify?
@@ -202,10 +202,3 @@ in the left hand side bottom .
 * **push: This is a Git command used to send my local changes to a remote repository.**
 
 * **-u: This is a command-line option that stands for "set upstream." When used with the git push command, it establishes a tracking relationship between my local branch and the remote branch I am  pushing to.**
-
-
-
-
-
-
-
