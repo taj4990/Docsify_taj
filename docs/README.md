@@ -20,7 +20,7 @@
 
 >> -a- **The -a flag is a command-line option that stands for "all." When used with the ps command, it instructs podman to show all containers, including those that are stopped or exited, in addition to the running containers** 
 
-## <span style="color: Blue;">Step 2
+> **Step 2**
 
 Make directory with the name of **myapp** and then instruct the system to change the current diarectory to the **myapp**diarectory 
 >  **mkdir myapp**
@@ -35,7 +35,7 @@ Make directory with the name of **myapp** and then instruct the system to change
 
 >> cd: **cd is a command-line command that stands for "change directory." It is used to navigate between different directories (folders) in a file system.**
 
-## <span style="color: Blue;">Step 3
+> **Step 3**
 
 Instruct vim editor to open file named **Docker file** for editing.
 ![Alt text](docs4.png)
@@ -44,7 +44,7 @@ Instruct vim editor to open file named **Docker file** for editing.
 **Dockerfile is the name of the file that I want to open.
 
 
-## <span style="color: Blue;">Step 4
+> **Step 4**
 Now create an empty file with the name of **index.html** also make md file with the name of **README.md**
  > **touch index.html**
 
@@ -53,8 +53,7 @@ Now create an empty file with the name of **index.html** also make md file with 
 > #### Now enter the index.html file and paste the HTML syntax.
 
 ![Alt text](index.png)
-
-## <span style="color: Blue;">Step 5
+> **Step 5**
 
 >Now enter the README.md file using the vim command so that the Document text can be updated automatically.
 
@@ -62,7 +61,7 @@ Now create an empty file with the name of **index.html** also make md file with 
 
 ![Alt text](readme.png)
 
-## <span style="color: Blue;">Step 6
+> **Step 6**
 
 Now move the file **dockerfile** from the myapp directory to the current directory 
 >**mv myapp/dockerfile .**
@@ -78,14 +77,14 @@ Syntex : **podman build -f dockerfile -t docsify/demo**
 >>This output provides a detailed view of the steps taken to build the docker image and indicates the use of cached layers to optimizing the build process. The resulting image is tagged as **localhost/docsify/demo:latest**
 
 
-## <span style="color: Blue;">Step 7
+> **Step 7**
 >Now list the container images that are currently available in your system using the container management tool.
 
 > **podman ps**
 
 ![Alt text](docs6.png)
 
-## <span style="color: Blue;">Step 8 
+> **Step 8** 
 **Run the docker image** 
 
 >**podman run -itp 3000:3000 --name=docsify -v $(pwd):/docs docsify/demo**
@@ -96,7 +95,7 @@ Syntex : **podman build -f dockerfile -t docsify/demo**
 * The provided output confirms that the container is successfully serving content and listening on the specified port.
 
 
-## <span style="color: Blue;">Step 9
+> **Step 9**
 
 >Run local host on browser.
 
@@ -107,7 +106,7 @@ GitHub is a widely used platform for hosting and managing software projects usin
 
 >> ### <span style="color: teal;">Setup of GitHub
 
-## <span style="color: Blue;">Step 1
+>Step 1
 
 > Create a new repository.
 
