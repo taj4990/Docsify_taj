@@ -1,20 +1,13 @@
  <h1 align="center"> Docsify Setup</h1>
 
- >### <span style="color: teal;">Table of content
- 1. What is Docsify?
- 2. Setup steps of Docsify.
- 3. What is Git?
- 4. Setup steps of Git.
- 5. Docsify and Git Intigration. 
-
  ### <span style="color: skyblue;">Docsify- 
  * Docsify is a documentation site generator that focuses on simplicity and ease of use.
 
  * With Docsify, we can quickly turn our documentation content into a user-friendly website with navigation, search functionality, and other useful features.
 
- >> ### <span style="color: teal;">Setup of Docsify
+### Steps of Docsify Setup :
 
-## <span style="color: Blue;">Step 1
+ **Step 1**
 
  Here we are asking Podman to display information about all containers, including those that are not currently running, in the current environment.
 
@@ -26,7 +19,7 @@
 
 >> -a- **The -a flag is a command-line option that stands for "all." When used with the ps command, it instructs podman to show all containers, including those that are stopped or exited, in addition to the running containers** 
 
-## <span style="color: Blue;">Step 2
+**Step 2**
 
 Make directory with the name of **myapp** and then instruct the system to change the current diarectory to the **myapp**diarectory 
 >  **mkdir myapp**
@@ -41,7 +34,7 @@ Make directory with the name of **myapp** and then instruct the system to change
 
 >> cd: **cd is a command-line command that stands for "change directory." It is used to navigate between different directories (folders) in a file system.**
 
-## <span style="color: Blue;">Step 3
+**Step 3**
 
 Instruct vim editor to open file named **Docker file** for editing.
 ![Alt text](docs4.png)
