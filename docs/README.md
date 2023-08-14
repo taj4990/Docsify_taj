@@ -1,91 +1,62 @@
  <h1 align="center"> Docsify Setup</h1>
 
-
- ### <span style="color: skyblue;">Docsify- 
+ ### Docsify- 
  * Docsify is a documentation site generator that focuses on simplicity and ease of use.
 
  * With Docsify, we can quickly turn our documentation content into a user-friendly website with navigation, search functionality, and other useful features.
 
->**Setup of Docsify
 
-> **Step 1**
+ ### Steps of Docsify Setup
 
- Here we are asking Podman to display information about all containers, including those that are not currently running, in the current environment.
+1. Create Directory 
 
-> **podman ps -a**
-
-![image](text.png)
-
->> ps - **The ps command stands for "process status." In the context of podman, it is used to list containers and their current status.**
-
->> -a- **The -a flag is a command-line option that stands for "all." When used with the ps command, it instructs podman to show all containers, including those that are stopped or exited, in addition to the running containers** 
-
-> **Step 2**
-
-Make directory with the name of **myapp** and then instruct the system to change the current diarectory to the **myapp**diarectory 
 >  **mkdir myapp**
 
->  **cd myapp**
 
 ![Alt text](doc2.png)
 
->> mkdir: **mkdir is a command-line utility that stands for "make directory." It is used to create a new directory (also known as a folder) within a file system.**
+> mkdir: **mkdir is a command-line utility that stands for "make directory." It is used to create a new directory (also known as a folder) within a file system.**
 
->> myapp - **Is the name of directory that I have created**
+> myapp - **Is the name of directory that I have created**
 
->> cd: **cd is a command-line command that stands for "change directory." It is used to navigate between different directories (folders) in a file system.**
-
-> **Step 3**
-
-Instruct vim editor to open file named **Docker file** for editing.
+2. Instruct vim editor to open file named **Docker file** for editing.
 ![Alt text](docs4.png)
 
 > Here **vi** is the Vim text editor and here i am instructing it to open a file name **Dockerfile** for editing. 
 **Dockerfile is the name of the file that I want to open.
 
 
-> **Step 4**
-Now create an empty file with the name of **index.html** also make md file with the name of **README.md**
+3. Now create an empty file with the name of **index.html** also make md file with the name of **README.md**
  > **touch index.html**
 
 ![Alt text](docs3.png)
 
-> #### Now enter the index.html file and paste the HTML syntax.
+4. Now enter the index.html file using the command.
+>vim index.html
+
+5. Paste the HTML syntax.
 
 ![Alt text](index.png)
-> **Step 5**
 
->Now enter the README.md file using the vim command so that the Document text can be updated automatically.
+6. Now into  enter the README.md file. So that the Document text can be updated automatically.
 
 > **vim README.md**
 
 ![Alt text](readme.png)
 
-> **Step 6**
+7. **Build Docker Image**
 
-Now move the file **dockerfile** from the myapp directory to the current directory 
->**mv myapp/dockerfile .**
+ >**docsify/demo**.
+ **podman build -f dockerfile -t docsify/demo**
 
-> Also instruct the Podman to built docker image using the dockefile named Dockerfile and tag the resulting image as **docsify/demo**.
-Syntex : **podman build -f dockerfile -t docsify/demo** 
+![Alt text](docs5.png)
 
 * **-f(--file)** -This option is used to specify the path to the Docker file that should be used for building the image.
 * **-t(--Tag)** - This option used to specify a name and optional tag for the image being build. 
 
-![Alt text](docs5.png)
+>This output provides a detailed view of the steps taken to build the docker image and indicates the use of cached layers to optimizing the build process. The resulting image is tagged as **localhost/docsify/demo:latest**
 
->>This output provides a detailed view of the steps taken to build the docker image and indicates the use of cached layers to optimizing the build process. The resulting image is tagged as **localhost/docsify/demo:latest**
-
-
-> **Step 7**
->Now list the container images that are currently available in your system using the container management tool.
-
-> **podman ps**
-
-![Alt text](docs6.png)
-
-> **Step 8** 
-**Run the docker image** 
+8. **Run docker image** 
 
 >**podman run -itp 3000:3000 --name=docsify -v $(pwd):/docs docsify/demo**
 
@@ -95,94 +66,86 @@ Syntex : **podman build -f dockerfile -t docsify/demo**
 * The provided output confirms that the container is successfully serving content and listening on the specified port.
 
 
-> **Step 9**
-
->Run local host on browser.
+4 Run local host on browser.
 
 ![Alt text](browser.png)
 
-# <span style="color: Grey;">GitHub
-GitHub is a widely used platform for hosting and managing software projects using the Git version control system. It provides a collaborative environment for developers to work together on projects, track changes, and manage code repositories.
+## GitHub
+### ***Introduction***
+GitHub is a code hosting platform for version control and collaboration. It provides a collaborative environment for developers to work together on projects, track changes, and manage code repositories.
 
->> ### <span style="color: teal;">Setup of GitHub
+### ***Creating a new repository***
 
->Step 1
+1. In the upper-right corner of any page, use the drop-down menu, and select New repository.
 
-> Create a new repository.
+![Alt text](taj4.png)
 
-> Click on **New repository**
+2. In the "Repository name" box,write your repository name.
 
-![Alt text](Git1.png)
+3. Make a selection for your repository's visibility: Public or Private.
 
-## <span style="color: Blue;">Step 2
+4. Select Add a README.md  file.
 
-
->Now enter your repository name and make it **public**
+5. Click Create repository.
 
 ![Alt text](Git2.png)
 
+### ***Docsify and Git intigration*** 
 
-
-
-
-# <span style="color: Grey;">Docsify and Git intigration 
-
-![Alt text](Git8.png)
-
-## <span style="color: Blue;"> Step 1
-
-![Alt text](git4.png)
-#### For creating a new repository on CLI follow all these steps 
+1. For creating a new repository on CLI follow all these steps 
 * git init
 * git add README.md 
 * git commit -m "first commit" 
 
+>git init - It is a command in the Git version control system that initializes a new repository in a directory.
 
-![Alt text](Git5.png)
+>git commit -m "first commit"  - The command git commit -m "first commit" is used to create a new commit in a Git repository with a specific commit message.
 
-![Alt text](Git6.png)
+* The -m flag is used to specify a commit message. The commit message is a brief description of the changes we're committing.
 
-## <span style="color: Blue;">Step 4
+2. When we change  and update something in our document , run following commands:**
+>git branch -M main
+> git remote add origin http://github.com.taj4990/docsify_taj.git
+> git push -u origin main
 
->**When we change  and update something in our document , run following commands:**
-* git branch -M main
-* git remote add origin http://github.com.taj4990/docsify_taj.git
-* git push -u origin main
-* Enter the user name and then enter.
-* Now for password goto Git settings and create token and make some changes.
+3. Enter the user name and then enter.
+4. Now for password goto Git settings and create token and make some changes.
+
+5. Token Creation
+
+* Click on settings.
 
 ![Alt text](taj.png)
 
-
 * Click on developer setting
-in the left hand side bottom .
-
 
 ![Alt text](taj1.png)
 
+* In Personal access token.
+  Select token(classic).
 
-* Select Personal access token.
+![Alt text](taj3.1.png)
 
-![Alt text](<taj 2.png>)
+* Click on Generate new token(classic).
 
-* Select classic token.
-
-![Alt text](taj3.png)
-
-
-* Generate classic token.
-![Alt text](GitN5.png)
+![Alt text](taj5.png)
 
 * Varify login
+
 ![Alt text](GitN6.png)
 
 * Give name of your token and marks all the boxes and click on create.
-![Alt text](GitN7.png)
+
+![Alt text](taj7.png)
+
 
 ![Alt text](GitN8.png)
 
-* **after that copy the token and paste that on your CLI(Command line interface).**
+* **After submition copy the token and paste it on your CLI(Command line interface).**
 
+![Alt text](taj9.1.png)
+
+* Output image is given below for the better understanding.
 
 ![Alt text](Git7.png)
 
