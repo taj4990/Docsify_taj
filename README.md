@@ -1,13 +1,14 @@
  <h1 align="center"> Docsify Setup</h1>
 
+
  ### <span style="color: skyblue;">Docsify- 
  * Docsify is a documentation site generator that focuses on simplicity and ease of use.
 
  * With Docsify, we can quickly turn our documentation content into a user-friendly website with navigation, search functionality, and other useful features.
 
-### Steps of Docsify Setup :
+ >> ### <span style="color: teal;">Setup of Docsify
 
- **Step 1**
+## <span style="color: Blue;">Step 1
 
  Here we are asking Podman to display information about all containers, including those that are not currently running, in the current environment.
 
@@ -19,7 +20,7 @@
 
 >> -a- **The -a flag is a command-line option that stands for "all." When used with the ps command, it instructs podman to show all containers, including those that are stopped or exited, in addition to the running containers** 
 
-**Step 2**
+## <span style="color: Blue;">Step 2
 
 Make directory with the name of **myapp** and then instruct the system to change the current diarectory to the **myapp**diarectory 
 >  **mkdir myapp**
@@ -34,7 +35,7 @@ Make directory with the name of **myapp** and then instruct the system to change
 
 >> cd: **cd is a command-line command that stands for "change directory." It is used to navigate between different directories (folders) in a file system.**
 
-**Step 3**
+## <span style="color: Blue;">Step 3
 
 Instruct vim editor to open file named **Docker file** for editing.
 ![Alt text](docs4.png)
@@ -80,7 +81,7 @@ Syntex : **podman build -f dockerfile -t docsify/demo**
 ## <span style="color: Blue;">Step 7
 >Now list the container images that are currently available in your system using the container management tool.
 
->>> **podman ps**
+> **podman ps**
 
 ![Alt text](docs6.png)
 
@@ -151,18 +152,24 @@ GitHub is a widely used platform for hosting and managing software projects usin
 * Enter the user name and then enter.
 * Now for password goto Git settings and create token and make some changes.
 
-![Alt text](GitN1.png)
+![Alt text](taj.png)
+
 
 * Click on developer setting
 in the left hand side bottom .
 
-![Alt text](GitN2.png)
+
+![Alt text](taj1.png)
+
 
 * Select Personal access token.
-![Alt text](GitN3.png)
+
+![Alt text](<taj 2.png>)
 
 * Select classic token.
-![Alt text](GitN4.png)
+
+![Alt text](taj3.png)
+
 
 * Generate classic token.
 ![Alt text](GitN5.png)
