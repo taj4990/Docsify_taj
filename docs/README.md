@@ -6,7 +6,7 @@
 
  * With Docsify, we can quickly turn our documentation content into a user-friendly website with navigation, search functionality, and other useful features.
 
- >> ### <span style="color: teal;">Setup of Docsify
+>**Setup of Docsify
 
 > **Step 1**
 
