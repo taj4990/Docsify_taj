@@ -8,7 +8,7 @@
 
  >> ### <span style="color: teal;">Setup of Docsify
 
-**Step 1**
+> **Step 1**
 
  Here we are asking Podman to display information about all containers, including those that are not currently running, in the current environment.
 
