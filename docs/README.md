@@ -46,8 +46,7 @@
 
 7. **Build Docker Image**
 
- >**docsify/demo**.
- **podman build -f dockerfile -t docsify/demo**
+ >**podman build -f dockerfile -t docsify/demo**
 
 ![Alt text](docs5.png)
 
